@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> Creat contact</title>
+        <link rel="stylesheet" href="contact.css">
+        <script src="contact.js"></script>
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <nav>
+            <div class="left-side-nav">
+                <a href=""> <img src="assets/logo.png" alt="logo-brand"
+                    class="logo-nav">
+                </a>
+    
+                    <ul>
+                        <li><a href="index.html" class="list-active">Home</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    </ul>
+
+                </div>
+                <div class="right-side-nav">
+                    <a href="contact.html" class="contact-nav">Contact</a></li>
+            </div>
+        </nav>
+
+        <!-- from contact -->
+        <div class="form-contact">
+            <div class="container">
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="input your name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" pattern="">
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject</label>
+        
+                        <select id="subject">
+                            <option value="" hidden>Select here</option>
+                            <option value="let's talk">Let's Talk</option>
+                            <option value="let's Collaboration">Let's Collaboration</option>
+                            <option value="I'am Hiring">I'am Hiring</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Your Massage</label>
+        
+                        <textarea id="message" cols="30" rows="5"></textarea>
+                    </div>
+                    <button class="button" onclick="submitData()" type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+            
+
+    </body>
+</html>

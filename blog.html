@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" href="blog.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <script src="blog.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="left-side-nav">
+                <a href=""> <img src="assets/logo.png" alt="logo-brand"
+                    class="logo-nav">
+                </a>
+    
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="" class="list-active">Blog</a></li>
+                    </ul>
+
+                </div>
+                <div class="right-side-nav">
+                    <a href="contact.html" class="contact-nav">Contact</a></li>
+            </div>
+        </nav>
+
+
+        <!--Start blog form-->
+        <div class="form-project">
+            <h2>ADD MY PROJECT</h2>
+            <form onsubmit="addProject(event)">
+              <div class="form-title">
+                <label for="projectName">Project Name</label>
+                <input class="form-box" type="text" id="projectName">
+              </div>
+
+            <!--date-->
+              <div class="form-date">
+                <div class="date">
+                  <div class="start-date">
+                    <label for="startDate">Start Date</label>
+                    <input class="form-box" type="Date" id="startDate">
+                  </div>
+                  <div class="end-date">
+                    <label for="endDate">End Date</label>
+                    <input class="form-box" type="Date" id="endDate">
+                  </div>
+                </div>
+              </div>
+
+            <!--Description-->
+              <div class="form-description">
+                <label for="description">Description</label>
+                <textarea class="textarea-box" id="description"></textarea>
+              </div>
+              <!-- Technologies -->
+              <div class="form-technoligies">
+                <label for="technologies">Technologies</label>
+
+                <div class="technologies">
+                  <div class="tech-left">
+                    <div class="nodeJs">
+                      <input type="checkbox" id="nodeJs" value="node">
+                      <label for="nodeJs">Node JS</label>
+                    </div>
+                    <div class="reactJs">
+                      <input type="checkbox" id="reactJs" value="react">
+                      <label for="reactJs">React JS</label>
+                    </div>
+                  </div>
+                  
+                  <div class="tech-right">
+                    <div class="nextJs">
+                      <input type="checkbox" id="nextJs" value="next">
+                      <label for="nextJs">Next Js</label>
+                    </div>
+                    <div class="typeScript">
+                      <input type="checkbox" id="typeScript" value="typeScript">
+                      <label for="typeScript">Type Script</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--project img-->
+              <div class="form-img" style="margin-bottom: 35px">
+                <label for="image">Upload Image</label>
+                <div class="input-image">
+                  <label for="image">
+                    <p>Choose</p>
+                    <i class="fa-solid fa-paperclip"></i>
+                  </label>
+                  <input type="file" id="image" hidden="">
+                </div>
+              </div>
+              <!--submit button-->
+              <div class="btn-submit">
+                <button class="button-submit">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- card blog -->
+          <div class="projects">
+              <h2>MY PROJECT</h2>
+              <div class="card" id="card">
+                  <div class="card-project">
+                    <img src="assets/hacking2.jpg" id="image-post" alt="">
+                    <a href="blog-detail.html" id="project-name">Creating blog projects - 2022</a>
+                    <p id="duration-post">duration</p>
+                    <p id="description-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium nisi quibusdam debitis amet sunt, natus nulla ab dolore facere!</p>
+                    <div class="logo-post" id="logo-post">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-brands fa-react"></i>
+                      <i class="fa-brands fa-next"></i>
+                      <i class="fa-brands fa-typeScipt"></i>
+                    </div>
+                      <div class="btn">
+                        <button class="button">edit</button>
+                        <button class="button">delete</button>
+                      </div>
+                  </div>
+
+                  <div class="card-project">
+                    <img src="assets/hacking.jpg" id="image-post" alt="">
+                    <a href="detail-blog.html" id="project-name">Creating blog projects - 2022</a>
+                    <p id="duration-post">duration</p>
+                    <p id="description-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium nisi quibusdam debitis amet sunt, natus nulla ab dolore facere!</p>
+                    <div class="logo-post" id="logo-post">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-brands fa-react"></i>
+                      <i class="fa-brands fa-next"></i>
+                      <i class="fa-brands fa-typeScipt"></i>
+                    </div>
+                      <div class="btn">
+                        <button class="button">edit</button>
+                        <button class="button">delete</button>
+                      </div>
+                  </div>
+
+                  <div class="card-project">
+                    <img src="assets/hacking2.jpg" id="image-post" alt="">
+                    <a href="detail-blog.html" id="project-name">Creating blog projects - 2022</a>
+                    <p id="duration-post">duration</p>
+                    <p id="description-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium nisi quibusdam debitis amet sunt, natus nulla ab dolore facere!</p>
+                    <div class="logo-post" id="logo-post">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-brands fa-react"></i>
+                      <i class="fa-brands fa-next"></i>
+                      <i class="fa-brands fa-typeScipt"></i>
+                    </div>
+                      <div class="btn">
+                        <button class="button">edit</button>
+                        <button class="button">delete</button>
+                      </div>
+                  </div>
+
+                  <div class="card-project">
+                    <img src="assets/hacking2.jpg" id="image-post" alt="">
+                    <a href="detail-blog.html" id="project-name">Creating blog projects - 2022</a>
+                    <p id="duration-post">duration</p>
+                    <p id="description-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium nisi quibusdam debitis amet sunt, natus nulla ab dolore facere!</p>
+                    <div class="logo-post" id="logo-post">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-brands fa-react"></i>
+                      <i class="fa-brands fa-next"></i>
+                      <i class="fa-brands fa-typeScipt"></i>
+                    </div>
+                      <div class="btn">
+                        <button class="button">edit</button>
+                        <button class="button">delete</button>
+                      </div>
+                  </div>
+
+                  <div class="card-project">
+                    <img src="assets/hacking2.jpg" id="image-post" alt="">
+                    <a href="detail-blog.html" id="project-name">Creating blog projects - 2022</a>
+                    <p id="duration-post">duration</p>
+                    <p id="description-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium nisi quibusdam debitis amet sunt, natus nulla ab dolore facere!</p>
+                    <div class="logo-post" id="logo-post">
+                      <i class="fa-brands fa-node"></i>
+                      <i class="fa-brands fa-react"></i>
+                      <i class="fa-brands fa-next"></i>
+                      <i class="fa-brands fa-typeScipt"></i>
+                    </div>
+                      <div class="btn">
+                        <button class="button">edit</button>
+                        <button class="button">delete</button>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+    </body>
+</html>
